@@ -1,4 +1,4 @@
-from pypushover import send_message
+from pypushover.pushover import send_message
 import sys
 
 def error_notification(exc_type, exc_value, exc_traceback):

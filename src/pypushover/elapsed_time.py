@@ -1,4 +1,4 @@
-from pypushover import send_message
+from pypushover.pushover import send_message
 from time import now
 
 last_time = now()
