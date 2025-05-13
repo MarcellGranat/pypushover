@@ -1,5 +1,6 @@
-from .pushover import send_message
 from time import time
+
+from .pushover import send_message
 
 last_time = time()
 sent_first_message = False
@@ -25,4 +26,5 @@ def notify_after_elapsed_time(
 
 
 if __name__ == "__main__":
-    notify_after_elapsed_time("Hello from pypushover!")
+    for i in range(10):
+        notify_after_elapsed_time("Hello from pypushover!", elapsed_time=3)
